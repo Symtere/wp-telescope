@@ -80,7 +80,7 @@
     }
 }
 @mixin make-outline-white-button() {
-    background-color: $primary;
+    background-color: transparent;
     border-color: #fff;
     color: #fff;
 

@@ -1,5 +1,5 @@
 $theme-version: 1.0;
-$theme-name: unquote('custom');
+$theme-name: unquote('telescope');
 
 //== Projects vars
 $img-path: 'assets/img/';
@@ -42,68 +42,48 @@ $screen-wp-md-max: 781px;
 
 //== Colors
 
-//== Red
-$red-palette: (
-    '400': #e4282b,
-);
-$red-400: map-get($red-palette,'400');
 
 //== Blue
 $blue-palette: (
-    '800': #0060B4,
-    '400': #007cba,  // primary
-    '300': #0EB5DF,
+    '400': #1D4ED8,  // primary
 );
-$blue-800: map-get($blue-palette,'800');
 $blue-400: map-get($blue-palette,'400');
-$blue-300: map-get($blue-palette,'300');
 
-//== Green
-$green-palette: (
-    '400': #28e47c,
-);
-$green-400: map-get($green-palette,'400');
 
-$green-variant-palette: (
-    '500': #3b9f68,
-);
-$green-variant-500: map-get($green-variant-palette,'500');
-
-//== Orange
-$orange-palette: (
-    '600': #FFAA3B,
-);
-$orange-600: map-get($orange-palette,'600');
-
+//== Black
 $black-palette: (
-    '700': #142128,
+    '900': #18181B,
+    '700': #3F3F46,
 );
+$black-900: map-get($black-palette,'900');
 $black-700: map-get($black-palette,'700');
+
+//== Gray
+$gray-palette: (
+    '500': #71717A,
+    '300': #D4D4D8,
+    '100': #F4F4F5,
+);
+$gray-500: map-get($gray-palette,'500');
+$gray-300: map-get($gray-palette,'300');
+$gray-100: map-get($gray-palette,'100');
 
 //== Back office Gutenberg palettes
 /*
  * See wp-content/themes/custom/scss/components/_site-colors.scss
 */
 $gutenberg-palettes: (
-    'red': (
-        '400': $red-400,
-    ),
     'blue': (
-        '800': $blue-800,
         '400': $blue-400,
-        '300': $blue-300,
-    ),
-    'green': (
-        '400': $green-400,
-    ),
-    'green-variant': (
-        '500': $green-variant-500,
-    ),
-    'orange': (
-        '600': $orange-600,
     ),
     'black': (
+        '900': $black-900,
         '700': $black-700,
+    ),
+    'gray': (
+        '500': $gray-500,
+        '300': $gray-300,
+        '100': $gray-100,
     ),
     'default': (
         'white': #fff,
@@ -114,7 +94,7 @@ $header-height: 100px;
 $banner-header-offset: 70px;
 
 $body-bg: #fff;
-$body-color: #363636;
+$body-color: #000;
 $primary: $blue-400;
 $success: #45B384;
 $secondary: #e2e2e2;
@@ -137,17 +117,18 @@ $main-loader: loader-url('grid.svg');
 
 
 //== Typography
-$font-family-sans-serif: 'Open Sans', Arial, sans-serif;
+$font-family-sans-serif: 'Inter', Arial, sans-serif;
 $ff-fa: 'Font Awesome 6 Pro';
 
-//$headings-font-family: $font-family-sans-serif;
-//$headings-font-weight: 700;
+$headings-font-family: 'Work Sans', Arial, sans-serif;
+$headings-font-weight: 600;
 $headings-margin-bottom: 1.5rem;
-$h1-font-size: rem(54px);
-$h2-font-size: rem(38px);
+$h1-font-size: rem(48px);
+$h2-font-size: rem(36px);
 $h3-font-size: rem(30px);
-$h4-font-size: rem(22px);
+$h4-font-size: rem(24px);
 $h5-font-size: rem(20px);
+$h6-font-size: rem(18px);
 
 $paragraph-margin-bottom: 1.25rem;
 
@@ -222,11 +203,11 @@ $input-border-radius: 0;
 $btn-transition: .5s;
 $btn-font-weight: 600;
 $btn-border-width: 2px;
-$btn-padding-y: .47rem;
-$btn-padding-x: 1.25rem;
-$btn-border-radius: 0;
+$btn-padding-y: .64rem;
+$btn-padding-x: 1.9rem;
+$btn-border-radius: 48px;
 $btn-font-size: 1rem;
-$btn-line-height: 1.4;
+$btn-line-height: 1.2;
 
 //== Pagination
 $pagination-primary-bg: $primary;

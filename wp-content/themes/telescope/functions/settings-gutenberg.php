@@ -41,17 +41,14 @@ if (!function_exists('we_theme_gut_support')) {
         // Enqueue editor styles.
         //add_editor_style($editor_stylesheet); // see wp-content/themes/custom/functions/assets.php
 
-        $red_400 = '#e4282b';
+        $blue_400 = '#1D4ED8';
 
-        $blue_300 = '#0EB5DF';
-        $blue_800 = '#0060B4';
+        $black_900 = '#18181B';
+        $black_700 = '#3F3F46';
 
-        $orange_600 = '#FFAA3B';
-
-        $green_400 = '#28e47c';
-        $green_varient_500 = '#3b9f68';
-
-        $black_700 = '#142128';
+        $gray_500 = '#71717A';
+        $gray_300 = '#D4D4D8';
+        $gray_100 = '#F4F4F5';
 
         $white_label = esc_attr('Blanc');
         $black_label = esc_attr('Noir');
@@ -72,39 +69,34 @@ if (!function_exists('we_theme_gut_support')) {
             'editor-color-palette',
             array(
                 array(
-                    'name'  => $red_label,
-                    'slug'  => 'red-400',
-                    'color' => $red_400,
-                ),
-                array(
-                    'name'  => $blue_label . $light_label,
-                    'slug'  => 'blue-300',
-                    'color' => $blue_300,
-                ),
-                array(
                     'name'  => $blue_label,
-                    'slug'  => 'blue-800',
-                    'color' => $blue_800,
+                    'slug'  => 'blue-400',
+                    'color' => $blue_400,
                 ),
                 array(
-                    'name'  => $orange_label,
-                    'slug'  => 'orange-600',
-                    'color' => $orange_600,
-                ),
-                array(
-                    'name' => $green_label,
-                    'slug' => 'green-400',
-                    'color' => $green_400,
-                ),
-                array(
-                    'name'  => $green_label . $variant_label,
-                    'slug'  => 'green-variant-500',
-                    'color' => $green_varient_500,
+                    'name'  => $black_label,
+                    'slug'  => 'black-900',
+                    'color' => $black_900,
                 ),
                 array(
                     'name'  => $black_label,
                     'slug'  => 'black-700',
                     'color' => $black_700,
+                ),
+                array(
+                    'name'  => $gray_label,
+                    'slug'  => 'gray-500',
+                    'color' => $gray_500,
+                ),
+                array(
+                    'name'  => $gray_label,
+                    'slug'  => 'gray-300',
+                    'color' => $gray_300,
+                ),
+                array(
+                    'name'  => $gray_label,
+                    'slug'  => 'gray-100',
+                    'color' => $gray_100,
                 ),
             )
         );

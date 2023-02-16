@@ -14,7 +14,7 @@
 
                 do_action( 'theme_after_page_content' );
             ?>
-            <?php get_template_part( 'template-parts/ui', ''); ?>
+            <?php // get_template_part( 'template-parts/ui', ''); ?>
             <?php endwhile; ?>
         </div>
     </div>
