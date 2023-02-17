@@ -41,6 +41,16 @@ function footer_nav()
         'theme_location'  => 'nav_footer',
         'menu_class'      => 'footer-nav list-unstyled',
     ]);
+    wp_nav_menu([
+        'container'       => '',
+        'theme_location'  => 'nav_footer_1',
+        'menu_class'      => 'footer-nav list-unstyled',
+    ]);
+    wp_nav_menu([
+        'container'       => '',
+        'theme_location'  => 'nav_footer_2',
+        'menu_class'      => 'footer-nav list-unstyled',
+    ]);
 
     /*
     $footer_nav_args = [

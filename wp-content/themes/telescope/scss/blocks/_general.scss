@@ -22,16 +22,21 @@
     }
 }
 
-//== Global padding for all blocks groups
-.main-container {
-
-    > .no-page-banner-first > .wp-block-group,
-    > .wp-block-group {
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-        margin-bottom: 0;
-    }
+.has-radius {
+    border-radius: 20px;
+    overflow: hidden;
 }
+
+//== Global padding for all blocks groups
+// .main-container {
+
+//     > .no-page-banner-first > .wp-block-group,
+//     > .wp-block-group {
+//         padding-top: 2rem;
+//         padding-bottom: 2rem;
+//         margin-bottom: 0;
+//     }
+// }
 
 
 @media (min-width: $screen-md) {
@@ -43,14 +48,14 @@
             // padding-bottom: 2rem;
         }
     }
-    .main-container {
+    // .main-container {
 
-        > .no-page-banner-first > .wp-block-group,
-        > .wp-block-group {
-            padding-top: 3rem;
-            padding-bottom: 3rem;
-        }
-    }
+    //     > .no-page-banner-first > .wp-block-group,
+    //     > .wp-block-group {
+    //         padding-top: 3rem;
+    //         padding-bottom: 3rem;
+    //     }
+    // }
 }
 @media (min-width: $screen-lg) {
 
@@ -58,8 +63,8 @@
 
         > .no-page-banner-first > .wp-block-group,
         > .wp-block-group {
-            padding-top: 4rem;
-            padding-bottom: 4rem;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
         }
     }
 }

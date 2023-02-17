@@ -19,11 +19,16 @@
                             <?php echo function_exists('get_acf_logo_header') ? get_acf_logo_header() : ''; ?>
                         </a>
                     </div>
-                    <nav class="navbar navbar-expand-lg navbar-dark d-none d-xl-flex">
+                    <nav class="navbar navbar-expand-lg navbar-light d-none d-xl-flex">
                         <?php echo function_exists('header_nav') ? header_nav() : ''; ?>
                     </nav>
-                    <?php //echo function_exists('languages_list_header') ? languages_list_header() : ''; ?>
-                    <?php echo function_exists('weglot_languages_list_header') ? weglot_languages_list_header() : ''; ?>
+                    <?php
+                    $btn = get_field_option('button') ? get_field_option('button') : false;
+                    $btn_url = $btn ? esc_url($btn['url']) : false;
+                    $btn_title = $btn ? esc_attr($btn['title'] ): '';
+                    $btn_target = $btn ? esc_attr(' target="'. $btn['target'] . '"') : '';
+
+                    echo $btn_url ? sprintf('<div class="navbar-button d-none d-xl-flex"><a class="btn btn-primary" href="%1$s" title="%2$s"%3$s>%4$s</a></div>',$btn_url,$btn_title,$btn_target,$btn_title) : ''; ?>
                     <div class="aside-nav-wr d-xl-none">
                         <button class="aside-menu-toggler btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#aside-menu" aria-controls="aside-menu" aria-label="<?php echo __( 'Navigation', 'custom' ); ?>">
                             <span></span>

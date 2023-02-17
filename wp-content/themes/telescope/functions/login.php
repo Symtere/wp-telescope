@@ -61,7 +61,7 @@ add_action( 'login_head', function() { ?>
 
         body.login #loginform input:focus,
         body.login #lostpasswordform input:focus {
-            border-color: #e5202b;
+            border-color: #1d4ed8;
             box-shadow: 0 0 0 1px rgb(253 23 36 / 70%);
         }
         body.login #login a {
@@ -70,11 +70,11 @@ add_action( 'login_head', function() { ?>
         }
         body.login #login a:hover,
         body.login #login a:focus {
-            color: #e5202b;
+            color: #1d4ed8;
         }
         body.login .button-primary {
-            background-color: #e5202b;
-            border-color: #e5202b !important;
+            background-color: #1d4ed8;
+            border-color: #1d4ed8 !important;
             color: #fff;
             transition: .35s;
         }

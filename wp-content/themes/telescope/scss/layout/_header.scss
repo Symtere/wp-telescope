@@ -4,25 +4,23 @@
 }
 
 .site-header {
-    // position: sticky;
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     right: 0;
     width: 100%;
     z-index: $zindex-sticky;
-    background-color: rgba(#0f1417,.5);
     box-shadow: 0 0 10px rgba(#000,0);
     transition: .5s ease-in-out;
 
     .has-header-bg & {
-        @include sticky-header();
-        position: sticky $imp;
+        // @include sticky-header();
+        // position: sticky $imp;
     }
 
     &.is-sticky,
     &.on {
-        @include sticky-header();
+        // @include sticky-header();
 
         .main-nav {
             margin-top: 0;
@@ -34,11 +32,9 @@
 }
 
 .brand-header {
-    padding: 1rem 0;
+    padding: 1.75rem 0;
 }
-.brand-h-logo {
-    filter: brightness(0) invert(1);
-}
+
 
 .main-nav {
     padding: 0 80px;
@@ -49,7 +45,7 @@
         padding-bottom: 0;
 
         > a {
-            text-transform: uppercase;
+            // text-transform: uppercase;
         }
 
         &.active {
