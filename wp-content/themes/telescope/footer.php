@@ -8,6 +8,7 @@
                         <?php echo function_exists('get_brand_informations') ? get_brand_informations() : ''; ?>
                     </div>
                     <?php echo function_exists('footer_nav') ? footer_nav() : ''; ?>
+                    <?php echo function_exists('footer_nav_social') ? footer_nav_social() : ''; ?>
                 </div>
             </div>
             <div class="sub-footer">

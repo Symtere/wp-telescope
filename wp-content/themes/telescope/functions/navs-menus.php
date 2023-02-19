@@ -13,8 +13,10 @@ function register_theme_menu()
 {
     register_nav_menus([
         'nav_header'  => __( 'Navigation Principale', 'custom-bo' ),
-        'nav_footer' => __( 'Navigation Footer', 'custom-bo' ),
-        //'nav_social_footer' => __( 'Navigation Social footer', 'custom-bo' ),
+        'nav_footer' => __( 'Navigation Footer 1', 'custom-bo' ),
+        'nav_footer_1' => __( 'Navigation Footer 2', 'custom-bo' ),
+        'nav_footer_2' => __( 'Navigation Footer 3', 'custom-bo' ),
+        'nav_social_footer' => __( 'Navigation Social footer', 'custom-bo' ),
         'nav_rgpd' => __( 'Navigation RGPD', 'custom-bo' ),
     ]);
 }
