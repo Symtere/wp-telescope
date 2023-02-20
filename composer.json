@@ -1,5 +1,5 @@
 {
-    "name": "acme/telescope",
+    "name": "acme/",
     "repositories": [
         {
             "type": "composer",
@@ -23,7 +23,7 @@
         }
     ],
     "require": {
-        "wpackagist-plugin/svg-support": ">=2.4.2","wpackagist-plugin/admin-taxonomy-filter": ">=1.0.2","wpackagist-plugin/gutenberg": ">=13.7.2"
+        
     },
     "autoload": {
         "psr-0": {
