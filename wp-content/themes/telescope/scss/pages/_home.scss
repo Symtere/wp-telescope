@@ -1,0 +1,17 @@
+.group-business {
+    .wp-block-group__inner-container {
+        max-width: 1500px;
+
+        .wp-block-columns {
+            margin-left: 30px;
+            margin-right: 30px;
+            border-radius: 20px;
+            border: 2px solid #f4f4f5;
+            padding: 20px;
+
+            figure {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
