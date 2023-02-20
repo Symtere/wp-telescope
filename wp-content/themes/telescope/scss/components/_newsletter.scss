@@ -1,0 +1,24 @@
+.group-nl {
+    max-width: 768px;
+    margin: auto;
+}
+
+.form-newsletter {
+    max-width: 512px;
+    margin: auto;
+    border: 2px solid #D4D4D8;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+
+    button {
+        min-width: 160px;
+    }
+
+    input {
+        border: none $imp;
+        background: none $imp;
+        outline: none $imp;
+        box-shadow: none $imp;
+    }
+}

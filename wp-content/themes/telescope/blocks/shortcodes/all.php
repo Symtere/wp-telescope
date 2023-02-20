@@ -3,6 +3,7 @@
 $shortcodes = [
     'contact-map',
     'news-list',
+    'newsletter',
 ];
 
 foreach ( $shortcodes as $shortcode ) {
