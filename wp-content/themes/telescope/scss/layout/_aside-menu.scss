@@ -1,15 +1,17 @@
-.aside-menu-container {
-    padding: 2% 15px;
+
+
+.aside-header {
+    border-bottom: 1px solid #D4D4D8;
 }
 
 .aside-nav {
     padding: 0;
 
-    > .menu-item {
+    >.menu-item {
 
         &.active {
 
-            > a {
+            >a {
                 font-weight: 500;
 
                 &:before {
@@ -26,16 +28,19 @@
                 }
             }
         }
-        > a {
+
+        >a {
             position: relative;
             padding-left: 0.75rem;
             padding-right: 0.75rem;
             color: $aside-menu-link-color;
+            font-size: 20px;
         }
     }
+
     .dropdown-toggle {
 
-        > span {
+        >span {
             display: block;
             padding-right: 10px;
         }
@@ -58,6 +63,7 @@
             //transform: rotate(0);
             transition: .35s;
         }
+
         &[aria-expanded="true"] {
 
             &:after {
@@ -68,6 +74,7 @@
             }
         }
     }
+
     .dropdown-menu {
         margin-top: -1px;
         padding-top: 0;
@@ -85,6 +92,7 @@
                     font-weight: 500;
                 }
             }
+
             .dropdown-item {
                 color: $aside-menu-dropdown-link-color;
 
@@ -111,10 +119,8 @@
    Responsive
    ========================================================================== */
 
-@media (min-width: $screen-md) {
+@media (min-width: $screen-md) {}
 
-
-}
 @media (min-width: $screen-xl) {
 
     .aside-nav {
@@ -127,14 +133,8 @@
     }
 }
 
-@media (max-width: $screen-lg-max) {
+@media (max-width: $screen-lg-max) {}
 
-}
-@media (max-width: $screen-md-max) {
+@media (max-width: $screen-md-max) {}
 
-}
-
-@media (max-width: $screen-sm-max) {
-
-
-}
+@media (max-width: $screen-sm-max) {}
