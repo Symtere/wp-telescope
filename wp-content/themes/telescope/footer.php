@@ -2,15 +2,19 @@
 
         <footer id="footer" class="footer">
             <div class="container">
-                <div class="sup-footer d-flex justify-content-md-between justify-content-center">
-                    <div class="ft-brand text-center">
+                <div class="sup-footer d-flex flex-wrap flex-column flex-md-row flex-md-nowrap justify-content-md-between justify-content-start">
+                    <div class="ft-brand text-md-center text-left">
                         <?php echo function_exists('get_acf_logo_footer') ? '<div class="ft-brand-img">' . get_acf_logo_footer() . '</div>' : ''; ?>
                         <?php echo function_exists('get_brand_informations') ? get_brand_informations() : ''; ?>
                     </div>
                     <?php echo function_exists('footer_nav') ? footer_nav() : ''; ?>
-                    <?php echo function_exists('footer_nav_social') ? footer_nav_social() : ''; ?>
+                    <div class="ft-social">
+                        <div class="menu-nav-title">Suivez-nous</div>
+                        <?php echo get_social_items(); ?>
+                    </div>
                 </div>
             </div>
+            <?php /* ?>
             <div class="sub-footer">
                 <div class="container">
                     <div class="d-md-flex align-items-center justify-content-between">
@@ -27,13 +31,14 @@
                     </div>
                 </div>
             </div>
+            <?php */ ?>
         </footer>
 
-        <?php get_template_part( 'template-parts/aside-menu' ); ?>
+        <?php get_template_part('template-parts/aside-menu'); ?>
 
         <?php wp_footer(); ?>
-    </div>
+        </div>
 
-</body>
-</html>
+        </body>
 
+        </html>
