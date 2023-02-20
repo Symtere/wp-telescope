@@ -28,15 +28,15 @@
 }
 
 //== Global padding for all blocks groups
-// .main-container {
+.main-container {
 
-//     > .no-page-banner-first > .wp-block-group,
-//     > .wp-block-group {
-//         padding-top: 2rem;
-//         padding-bottom: 2rem;
-//         margin-bottom: 0;
-//     }
-// }
+    > .no-page-banner-first > .wp-block-group,
+    > .wp-block-group {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        margin-bottom: 0;
+    }
+}
 
 
 @media (min-width: $screen-md) {

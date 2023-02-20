@@ -23,14 +23,14 @@
 
 //== bg
 @mixin make-primary-button() {
-    background-color: $primary;
+    background-color: $primary $imp;
     border-color: $primary;
-    color: #fff;
+    color: #fff $imp;
 
     &:hover,
     &:focus {
-        background-color: #fff;
-        color: $primary;
+        background-color: #fff $imp;
+        color: $primary $imp;
     }
 }
 @mixin make-dark-button() {
@@ -80,13 +80,13 @@
     }
 }
 @mixin make-outline-white-button() {
-    background-color: transparent;
+    background-color: transparent $imp;
     border-color: #fff;
-    color: #fff;
+    color: #fff $imp;
 
     &:hover,
     &:focus {
-        background-color: #fff;
-        color: $primary;
+        background-color: #fff $imp;
+        color: $primary $imp;
     }
 }
