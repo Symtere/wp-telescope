@@ -1,10 +1,33 @@
 .social-nav {
     font-size: 1.6rem;
 
-    &.social-nav-header {
+    &.social-nav-header {}
 
+    &.social-nav-footer {}
+
+    i {
+        transition: .3s;
     }
-    &.social-nav-footer {
 
+    a {
+        color: #000000;
+
+        &:hover {
+            .fa-brands.fa-facebook {
+                color: #1877f2;
+            }
+
+            .fa-brands.fa-instagram {
+                color: #c13584;
+            }
+
+            .fa-brands.fa-twitter {
+                color: #1da1f2;
+            }
+
+            .fa-brands.fa-twitch {
+                color: #9146ff;
+            }
+        }
     }
 }
