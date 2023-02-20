@@ -8,7 +8,7 @@ function news_list_shortcode($atts)
         [
             'btn_title' => '',
             'archive_page_id' => '',
-            'per_page' => '',
+            'per_page' => '6',
             'pagination' => '',
         ],
         $atts
